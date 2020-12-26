@@ -15,6 +15,7 @@ artifacts:
   name: CompiledDll
 
 after_build:
+- cmd: echo %cd%
 - ps: ls -Recurse
 - cmd: move .\exampleciproject\ExampleCIProject\bin\Release\ExampleCIProject.dll .\
 - cmd: ls
