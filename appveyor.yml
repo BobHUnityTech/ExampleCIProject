@@ -1,6 +1,6 @@
 version: '{build}'
 image: Visual Studio 2017
-configuration: Release
+configuration: Release | Debug
 platform: Any CPU
 build:
   project: ExampleCIProject.sln
@@ -10,7 +10,7 @@ before_build:
 - cmd: msbuild ExampleCIProject.sln /t:Restore /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 artifacts:
-- path: '*.dll'
+- path: exampleciproject\ExampleCIProject\bin\Release\ExampleCIProject.dll
   name: CompiledDll
 
 on_finish:
