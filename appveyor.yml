@@ -10,12 +10,8 @@ before_build:
 - cmd: msbuild ExampleCIProject.sln /t:Restore /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 artifacts:
-- path: appveyor.yml
-- path: exampleciproject\ExampleCIProject\bin\Release\ExampleCIProject.dll
+- path: ExampleCIProject\bin\Release\ExampleCIProject.dll
   name: CompiledDll
 
 after_build:
 - cmd: echo %cd%
-- ps: ls -Recurse
-- cmd: move .\exampleciproject\ExampleCIProject\bin\Release\ExampleCIProject.dll .\
-- cmd: ls
