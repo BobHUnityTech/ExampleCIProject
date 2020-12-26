@@ -1,6 +1,10 @@
 version: '{build}'
 image: Visual Studio 2017
 configuration: Release
+
+environment:
+  appveyor_repo_tag: true
+
 platform: 
 - Any CPU
 - x86
