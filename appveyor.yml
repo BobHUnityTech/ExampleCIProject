@@ -1,0 +1,13 @@
+version: '{build}'
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+clone_folder: C:\project
+build:
+  project: ExampleCIProject.sln
+  verbosity: minimal
+before_build:
+- cmd: msbuild Confuser2.sln /t:Restore /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+
+artifacts:
+- path: '*.zip'
