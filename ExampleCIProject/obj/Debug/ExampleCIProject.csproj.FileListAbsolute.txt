@@ -1,0 +1,6 @@
+D:\Coding\BobHUnityProject\ExampleCIProject\ExampleCIProject\bin\Debug\ExampleCIProject.dll
+D:\Coding\BobHUnityProject\ExampleCIProject\ExampleCIProject\bin\Debug\ExampleCIProject.pdb
+D:\Coding\BobHUnityProject\ExampleCIProject\ExampleCIProject\obj\Debug\ExampleCIProject.csprojAssemblyReference.cache
+D:\Coding\BobHUnityProject\ExampleCIProject\ExampleCIProject\obj\Debug\ExampleCIProject.csproj.CoreCompileInputs.cache
+D:\Coding\BobHUnityProject\ExampleCIProject\ExampleCIProject\obj\Debug\ExampleCIProject.dll
+D:\Coding\BobHUnityProject\ExampleCIProject\ExampleCIProject\obj\Debug\ExampleCIProject.pdb
