@@ -18,19 +18,13 @@ artifacts:
   name: CompiledDll_x86
 
 deploy:
-  release: ExampleCIProject-v$(APPVEYOR_BUILD_VERSION)
-  description: '1'
-  provider: GitHub
+- provider: GitHub
+  tag: release-$(APPVEYOR_BUILD_VERSION)
+  description: "ExampleCIProject Release version=$(APPVEYOR_BUILD_VERSION)"
   auth_token:
-    secure: "/kG4nHpHn+uY2utcG0DAufaHgRD/zrgrVRgZr/ogfljoLmGhHs3D8ARr/cENAoWJ"
-  artifact:
-    - "ExampleCIProject\bin\Release\ExampleCIProject.dll"
-    - "ExampleCIProject\bin\x86\Release\ExampleCIProject.dll"
-  draft: false
-  prerelease: false
+    secure: /kG4nHpHn+uY2utcG0DAufaHgRD/zrgrVRgZr/ogfljoLmGhHs3D8ARr/cENAoWJ
   on:
-    branch: master                 # release from master branch only
-    APPVEYOR_REPO_TAG: true        # deploy on tag push only
+    APPVEYOR_REPO_TAG: true
 
 after_build:
 - cmd: echo %cd%
