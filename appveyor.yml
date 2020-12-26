@@ -6,7 +6,8 @@ build:
   project: ExampleCIProject.sln
   verbosity: minimal
 before_build:
-- cmd: msbuild Confuser2.sln /t:Restore /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+- cmd: ls
+- cmd: msbuild ExampleCIProject.sln /t:Restore /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 artifacts:
-- path: '*.zip'
+- path: '*.dll'
