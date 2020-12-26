@@ -14,4 +14,4 @@ artifacts:
   name: CompiledDll
 
 on_finish:
-- cmd: ls -Recurse
+- ps: ls -Recurse
