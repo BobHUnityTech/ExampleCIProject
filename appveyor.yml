@@ -24,7 +24,7 @@ deploy:
   auth_token:
     secure: /kG4nHpHn+uY2utcG0DAufaHgRD/zrgrVRgZr/ogfljoLmGhHs3D8ARr/cENAoWJ
   on:
-    APPVEYOR_REPO_TAG: true
+    appveyor_repo_tag: true
 
 after_build:
 - cmd: echo %cd%
