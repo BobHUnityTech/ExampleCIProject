@@ -11,3 +11,7 @@ before_build:
 
 artifacts:
 - path: '*.dll'
+  name: CompiledDll
+
+on_finish:
+- cmd: ls -Recurse
