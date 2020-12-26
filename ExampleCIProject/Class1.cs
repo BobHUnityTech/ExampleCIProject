@@ -8,6 +8,6 @@ namespace ExampleCIProject
 {
     public class Class1
     {
-
+        //test
     }
 }
