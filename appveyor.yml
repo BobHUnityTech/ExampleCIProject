@@ -14,5 +14,7 @@ artifacts:
 - path: exampleciproject\ExampleCIProject\bin\Release\ExampleCIProject.dll
   name: CompiledDll
 
-on_finish:
+after_build:
 - ps: ls -Recurse
+- cmd: move .\exampleciproject\ExampleCIProject\bin\Release\ExampleCIProject.dll .\
+- cmd: ls
