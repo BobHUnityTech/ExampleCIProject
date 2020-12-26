@@ -13,7 +13,9 @@ before_build:
 
 artifacts:
 - path: ExampleCIProject\bin\Release\ExampleCIProject.dll
-  name: CompiledDll
+  name: CompiledDll_Anycpu
+- path: ExampleCIProject\bin\x86\Release\ExampleCIProject.dll
+  name: CompiledDll_x86
 
 after_build:
 - cmd: echo %cd%
