@@ -4,16 +4,13 @@ configuration: Release
 skip_tags: true
 environment:
   appveyor_repo_tag: true
-
+test: off
 platform: 
 - Any CPU
 - x86
 build:
   project: ExampleCIProject.sln
   verbosity: minimal
-before_build:
-- cmd: ls
-- cmd: msbuild ExampleCIProject.sln /t:Restore /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 artifacts:
 - path: ExampleCIProject\bin\Release\ExampleCIProject.dll
